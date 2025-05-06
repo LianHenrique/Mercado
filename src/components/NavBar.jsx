@@ -1,0 +1,54 @@
+import Container from "react-bootstrap/Container"
+import { Navbar, NavbarCollapse, NavbarText, NavbarToggle, NavLink, Nav, Button } from "react-bootstrap"
+import { BsShop } from "react-icons/bs";
+
+const NavBar = () => {
+
+    const usuarioNome = "Lian";
+
+  return (
+    <div>
+        <Navbar expand="lg" bg="success" data-bs-theme="dark">
+            <Container>
+                <Navbar.Brand href="/home">
+                    <BsShop size={"1.5em"} className="me-2"/>
+                    Lian's market
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="minha-nav" />
+                <Navbar.Collapse id="minha-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="/home"> Produtos </Nav.Link>
+                        <Nav.Link href="/cadastro-produto"> Cadastro </Nav.Link>
+                    </Nav>
+                    <Nav className="justify-content-end">
+                        <Navbar.Text style={{color:"white", marginRight:"5px"}}>
+                            {/* Caso usuario tenha feito login, aparece sair, se não aparece entrar */}
+                        {
+                            usuarioNome === "Visitante" ? (
+                                <>
+                                    <Button variant="primary" href="/login"
+                                    style={{width:"100px",margin:"10px 0"}}
+                                    >
+                                        Entrar
+                                    </Button>
+                                </>
+                            ) : (
+                                <>
+                                    Usuario: {usuarioNome}
+                                    <Button variant="danger" href="/login"
+                                    style={{width:"100px", margin:"10px"}}>
+                                        Sair
+                                    </Button>
+                                </>
+                            )
+                        }
+                        </Navbar.Text>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    </div>
+  )
+}
+
+export default NavBar
