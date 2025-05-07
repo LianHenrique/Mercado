@@ -2,9 +2,13 @@ import Container from "react-bootstrap/Container"
 import { Navbar, NavbarCollapse, NavbarText, NavbarToggle, NavLink, Nav, Button } from "react-bootstrap"
 import { BsShop } from "react-icons/bs";
 
+import { useState, useEffect, useContext } from "react"
+
+import { AuthContext } from "../contexts/UserContext"
+
 const NavBar = () => {
 
-    const usuarioNome = "Lian";
+    const [usuarioNome, logout] = useContext(AuthContext);
 
   return (
     <div>
@@ -36,7 +40,8 @@ const NavBar = () => {
                                 <>
                                     Usuario: {usuarioNome}
                                     <Button variant="danger" href="/login"
-                                    style={{width:"100px", margin:"10px"}}>
+                                    style={{width:"100px", margin:"10px"}}
+                                    onClick={logout}>
                                         Sair
                                     </Button>
                                 </>
