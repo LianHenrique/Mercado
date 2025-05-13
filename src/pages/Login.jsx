@@ -37,7 +37,6 @@ const Login = () => {
         const respVerifica = verificaLogin(data)
 
         if(respVerifica == "Login bem sucedido"){
-            alert(respVerifica)
             navigate("/home")
         }
         else{
