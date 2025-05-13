@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {FloatingLabel, Container, Form, Button, Alert} from "react-bootstrap";
 
 import { useForm } from "react-hook-form"
@@ -10,13 +10,26 @@ import { useVerificaLogin } from "../hooks/useAPI"
 
 import { useNavigate } from "react-router-dom";
 
+import { useContext } from "react";
+import { AuthContext } from "../contexts/UserContext";
+
 const Login = () => {
+
+    const { logout } = useContext(AuthContext)
+
+    useEffect(() => {
+        logout()
+    }, [])
 
     const { verificaLogin } = useVerificaLogin()
 
     const navigate = useNavigate()
 
-    const { register, handleSubmit, formState: {errors}} = useForm()
+    const { 
+        register,
+        handleSubmit, 
+        formState: {errors}
+        } = useForm()
 
     const onSubmit = (data) => {
         console.log(data);
@@ -43,7 +56,9 @@ const Login = () => {
 
   return (
     <div>
-        <Container style={{height:"100vh"}} className="justify-content-center align-content-center">
+        <Container 
+        style={{height:"100vh"}} 
+        className="justify-content-center align-content-center">
             <BsBoxArrowInRight style={{
                 fontSize:"100px",
                 color:"green",

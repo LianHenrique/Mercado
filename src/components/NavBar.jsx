@@ -1,14 +1,17 @@
-import Container from "react-bootstrap/Container"
-import { Navbar, NavbarCollapse, NavbarText, NavbarToggle, NavLink, Nav, Button } from "react-bootstrap"
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Button from "react-bootstrap/Button";
+
 import { BsShop } from "react-icons/bs";
 
-import { useState, useEffect, useContext } from "react"
+import { useContext } from "react"
 
 import { AuthContext } from "../contexts/UserContext"
 
 const NavBar = () => {
 
-    const [usuarioNome, logout] = useContext(AuthContext);
+    const { usuarioNome, logout } = useContext(AuthContext);
 
   return (
     <div>

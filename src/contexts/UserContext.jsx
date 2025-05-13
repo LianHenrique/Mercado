@@ -19,8 +19,8 @@ export const AuthProvider = ({children}) => {
   }
 
   const logout = () => {
-    localStorage.setItem("userName")
-    localStorage.setItem("email")
+    localStorage.removeItem("userName")
+    localStorage.removeItem("email")
     setUsuarioNome("Visitante")
   }
 
