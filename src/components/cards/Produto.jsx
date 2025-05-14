@@ -17,7 +17,7 @@ const Produto = (props) => {
   }
 
   return (
-    <div>
+    <div style={{backgroundColor: "#e8ffec", height: "83.7vh"}}>
         <Card 
         style={{width: "15rem", height: "auto", margin: "10px", padding: "10px"}}>
           <Card.Img 
@@ -33,7 +33,7 @@ const Produto = (props) => {
             <Card.Subtitle>R$ {props.preco}</Card.Subtitle>
             <Card.Text>{props.descricao}</Card.Text>  
             <Card.Text>{props.categoria}</Card.Text>  
-            <Card.Link href={`/editar-produto/${props.id}`}>
+            <Card.Link href={`/edit-produto/${props.id}`}>
               <Button variant='warning'>Editar</Button>
             </Card.Link>
             <Card.Link>

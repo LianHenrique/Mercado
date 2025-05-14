@@ -75,5 +75,63 @@ export function useDeleteProduto() {
         console.log("Produto deletado:", res)
         return res
     }
-    return {deletarProduto}
+    return { deletarProduto }
+}
+
+export function useBuscarProdutoPorid(){
+    
+    const buscarProdutoPorid = async (idProduto) => {
+        const req = await fetch(`${url}produtos/${idProduto}`)
+        console.log("Produto:", req.json())
+        return (await req.json())
+    }
+    return { buscarProdutoPorid }
+
+}
+
+export function useListaCategorias(){
+
+    const [categorias, setCategorias] = useState([])
+
+    useEffect(() => {
+        async function fetchData() {
+            try{
+                const req = await fetch(`${url}categorias`)
+                setCategorias(await req.json())
+            }
+            catch(erros){
+                console.log(erros.message)
+            }
+        }
+        fetchData()
+    }, [])
+    return categorias
+}
+
+export function useInserirProduto(){
+    const inserirProduto = async (data) => {
+        const req = await fetch (`${url}produtos`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "appçication/json"
+            },
+            body: JSON.stringify(data)
+        })
+        return (await req.json())
+    }
+    return { inserirProduto }
+}
+
+export function useAtualizaProduto(){
+    const atualizaProduto = async (data, idProduto) => {
+        const req = await fetch (`${url}produtos/${idProduto}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "appçication/json"
+            },
+            body: JSON.stringify(data)
+        })
+        return (await req.json())
+    }
+    return { atualizaProduto }
 }
