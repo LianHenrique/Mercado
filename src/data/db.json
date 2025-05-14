@@ -1,61 +1,60 @@
 {
-    "usuarios":[
-        {
-            "id":"1",
-            "nome":"Ronaldo",
-            "email":"ronaldo7@gmail.com",
-            "senha":"777"
-        },
-        {
-            "id":"2",
-            "nome":"tst",
-            "email":"tst@gmail.com",
-            "senha":"123"
-        }
-    ],
-
-    "produtos": [
-        {
-          "id": 1,
-          "nome": "Camiseta Básica Masculina",
-          "descricao": "Camiseta de algodão, confortável e ideal para o dia a dia.",
-          "preco": 49.90,
-          "categoria": "Roupas",
-          "imagemUrl": "https://lab41.com.br/wp-content/uploads/2023/02/17.png"
-        },
-        {
-          "id": 2,
-          "nome": "Tênis Esportivo Feminino",
-          "descricao": "Tênis com design moderno, perfeito para atividades físicas.",
-          "preco": 199.90,
-          "categoria": "Calçados",
-          "imagemUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISERUTExMWFhIWFRYVFRgXGBoaFRoYGBcXFhUXFxkYICggGBolGxUVIjEjJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0lHR0rLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tNy0tLS0tLS0tLS0tLS0tLS0tKy0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwUCBAYBB//EADsQAAIBAQUGAggFBAEFAAAAAAABAhEDBCExQQUSUWFxkYHBIjJSobHR4fATQmJykgYVovEjFDNDU7L/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB4RAQEAAwACAwEAAAAAAAAAAAABAhESITEDQVFh/9oADAMBAAIRAxEAPwD7iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARXq8Kzg5yySqyUjvNipwlF5STXclIpJbf8ATVF6FceNC4tL5ZrFyXhj8DmLjdPazi3GnNYYmV9m0c8crry65Yzfh01heYT9WSfx7ExwFltBwmmnRr7p0Ou2VtaFsqZTSxXmuRuZbYyx0sQAaZVl8vsd5wxVP0yp3pQ1ne5Rxi8PcXcop5pMqNo03mkkqYYHPKX26Y2etNm67TjJel6L46fQ2neYZb0e5z6r2I7SxT5dPoJlS4R1CZ6cnK/WtknRtx4rFrnu6+Ba7H2v+I9ydFPOOm8qV7mplKzcbFuADTIAAAAAAAAAAAAAAAAAAAAAq9o2O7LeWUs+v+vgVV8hVHT2lmpJp5M563hRuOqdPkYyjpjXz/bV4dlaU1rgTbP2q1JNOklimZ/1pc/RVqljB49H9aHKwt2nU5eq7e4+17I2/Z2sFvNQnrX1XzTLiMk8mmfGtm7VaOgu21oOmGh0mblfjfRXJFLeJpzlRp46FBHaUXkqs3FabmMvWeUFi2LlsmOm9H7++xjaUoaUrxaf+tLrLH5e8xneMKywwxriTbWkd9tdFq6JcW8EYfhLfVcoquFcMksuh5Zwk7ROSpFKq6vBeOZJavdq85SeC6eWBlVnY7UksIy3ks96ta5646m/YbZg6KfoN4Y+r30Oa/Be403VyfSlaRw4LAktrunSrbca0rjmqV97RqZVm4x2iYOHs7/a2dpFQm6LBpuscm0qPDQtYf1K4+vBZpVTpm6LB8+ZuZRi4V0YNO57TsrXCMvS1i8JdtfA3DTAAAAAAAAAAAAAAAAAc/tGVbWXKi9yOgOcvr/5J/uZnJvD21L1dI2kHFqqao/E+S7d2baXS0cZpuD9SWjXDryPryfD6fdDC3jCcd2cFKLzTW8vFM52bdpdPjVhtHAt9lXmdpNRhFyk1RJefBHY2n9IXFz3vwHXgnOMeyaSLa43GFjHdsrONlHXdVZePPm2zOl21tlbOdlTe9K2arT8sFxb8+xcQsFHGu9J5t6/JcjXTUfVwdc+L41IrS8y0p4qvmvM0y9v96lDdShOW9Ld9GNVHnKmS5mmtmu2kvxaqCdVGuMnxl8jahe5cFX9qXhmzOwvblVPBrlTtTNEVneXGCxeCTeOlNTTuu9vSnNUrTcXCOa8a0r91kt7k5SblOsG092mOGjdcVVcDO9XiEEt+Sim1FVdE28kq6sIWs8YrWvwVX5dzG0tKvdT9LNvgtZfGhr2t4SdIqsn91fBGFjdZR33vVc3i3g0qUoumPcbXSe72aon95fVdjWt4/iNpZKj60xQtbynONlH1cd/ok3TvSv1Jr5JQhJrOWXamHRIDy2sFvLjp4MtdjbWlBuM8YJ0T1WCb6rE0rWKrveymu9G/gjK62NIVebrKXV4vtl4F3pLNuusbaMlWLTXIkOQu7ccU2nyzxxZsR2jav8AO+yNzJzuDpwc7Halr7XDRE0dsT1UX3+ZeonFXgKiO2/ah2fkzdu20LOeCdHweD+pdxLjY2gAVkAAAAAR29puxrrocrO0e9Kue869y8vFtvS5LBfModowcZtr60zVK8Me7OebrhNPXaff+ssERzt6feOOLNS0tlx+enteOhC7WuvvevRKhz26LBXn769Mjx3n56aZdSt/E+83yzYU/Dq+HJDarFz+XzwMa9u6ojTg348aPXqTRn98l0GzSS0nRfPFVeSroRqVNaaJvFc8dDGc8eeeGdXyeDMYLh0w4ZtuLKieV4lTRYV1pj6uTVDXvK31SarFtYUUoumNaSTrjT5maevj6Puw0PKfLDB8XVAZ3WcXwUs3TVaSXJ/NaEasJKU3O2e7Jpxi6LcVMUnqnmYys1LOjWdH2WD8qGMLLd1ppiqY64xp5kVPb3zch/wxVpKqW7GSrStG89DcsYPOVK8M6cfE0K8VLjm2v00rk+dCeN4k8qPwSeHi6dghcr1G3ruJ7qnKMm01jF+ksc8cDctbVPBZavToQNt+s6Lhp48RvpZe5+PQqpG/vM9iyFS+3g8eZJvfeDWBUSnlfvr4kTn90fiZR3nl8cPeBk35kk4YGVlZKPU8t7RJEFvse/Skt2eLxSerpxLQ5zY8quK/U/gdGdcb4cM5qgANMhHeJ0i3yJCG9r0GCK5Ixt7vGao/qjM8qc3VXz2Y9GpdcHrnx+hD/bp8Fp+bgtPE2bXa0IevvRz9aEtHTOKedcCa736M/Vab4ZOmGNHpiseZNLuq602XaP2FlWrfknUwew509aKfJOnv+hdOb5GDtOaGodVzdvclHB2sFLhONokRuytEsErRcbOSdF+1ek+x0Vq4yVJUa5pFRethxb3rOW7Lrh80YuN+m5lPtXq1xprqqUxyWD8iWEllXl0445oktLK1iqWsVaRXJSXXFVRNd9nWdpjC1cP003o+FKSXdkla0gctfHnySaPHwfTHB8XRo2Lxsy1hjFK0WfoYS8YyePhU0pSpg04vKjTXNvdePYqJHLj1o/cqnuXFacVxeJgpds8MVhkqaYhPh0rHFcXh8ij3mlz9Hnlh/s9UujpxweH1MN6uOD1wdHwSPd9ZN4fqXDHPLMCTefNe9cXxNqFylruvuuvE1YxppTTB+LwZlZ3uUPzOnCSpWuVHmu3gBYxucuLX3zPJXVLPy8iC02k6ZPul2ri14Gra3yX7ctK/GlfeLYSVYRUVkj12pTWlu3Wrb5VafZbvmYWd6o2q8MOfJUT+ORna8red5oa87VvHw8XklzNKF5TeFZaJR18eHSpdbKuEpyVaV5erBa05vjmyzz6L49rbYN2ot56YLq835FwY2cFFJLJGR3k1Hlt3QAFQPGqnoAqpw3W128jwsbxYKS4NZMrbWLi8V8n0MWadJdvJGDs1mkuxk5/ep5vcCKx3FyrzMW0s1QyckzCVpTNYEUceD7kUqaqjDktHQJyelQPVVcyK0ucJY0o+KwJVB8GSxXFU5kN6aErS2stPxIf5I2YX+xtFuzSXK0XwqTkNtdIyzSfJqq+nhQnP411+vLXYNjPGNYPjB4YZYOuBp2/9OzzjaRrT80WpeLi8exL/ANG4f9uU4fte9H+MvqHfLeP/AJLKf71KEgs/lV9tsm1TyhJKlKOjw5tr4GCuVtT1Hwzi0sccmjctdr2yzsFJcYTT8jUtdte1YWqfSpnbclQ2l2mq1gudMMedKeZBK2knSjXww6Ub8UzVve0bKftLqirtYWb/AD/HyM2tTFbW17Ua1osMatL4Z/xK+12xFZNv9uXvwfYgs7tF+rGcukW//pJFjdNgzljuKK4yz/ivmPN9L4ntof8AWTngo+jzxWH+K7FvcLG1mlhFLiopLvSsi0u2ybOGfpPnl4JYFxc7jK0yVI8X5cTUwv255fJPpo7N2dRpRxlxfDyR1d0uys40Xi+LF1usbNUj4vVk53xx08+WWwAGmAAAAAAPJRTweKPQBrTuUHxXR+WRDLZvCXeK8qG+Cai9VWvZj9qP8X8wtmP2o/x+pZAcxeq0I7N4zfgkjP8At0Nd59ZPyNwDUTqtT+3WXs/5S+Ydwjo5Lx+Ztgahuq60uMtGn1wfuNad3mvyvwxXuLoE5XqqD8T7/wBnjmi+lBPNJ9SJ3Oz9hdhyvUUE7OzecYvqkRu62XsR7IvpbMs3o10bI3siz4y7r5GeWu4onc7L2Yniu1kvyx7Ivlsiz/U/EzjsqyX5W+rY5O1DvxWS9xs2FytZ6bq4svrKwjH1YpdESGuWbn+NC7bKhHF+k+eXY3wDWmbdgACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//Z"
-        },
-        {
-          "id": 3,
-          "nome": "Relógio de Pulso Unissex",
-          "descricao": "Relógio elegante com pulseira de couro e mostrador analógico.",
-          "preco": 299.90,
-          "categoria": "Acessórios",
-          "imagemUrl": "https://down-br.img.susercontent.com/file/br-11134207-7qukw-ljpqorxp7nuy6f"
-        },
-        {
-          "id": 4,
-          "nome": "Mochila Executiva Masculina",
-          "descricao": "Mochila espaçosa com compartimentos para laptop e documentos.",
-          "preco": 159.90,
-          "categoria": "Bolsas e Mochilas",
-          "imagemUrl": "https://tripland.com.br/cdn/shop/files/S918f20e6a4a84e47832a7bfa67102aebJ_aef60720-3a32-41ed-9f37-8f8cfa56122c_288x.webp?v=1719506264"
-        },
-        {
-          "id": 5,
-          "nome": "Fone de Ouvido Bluetooth",
-          "descricao": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração.",
-          "preco": 249.90,
-          "categoria": "Eletrônicos",
-          "imagemUrl": "https://img.kalunga.com.br/fotosdeprodutos/282125z.jpg"
-        }
-      ],
-
-    "categorias":[]
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Ronaldo",
+      "email": "ronaldo7@gmail.com",
+      "senha": "777"
+    },
+    {
+      "id": "2",
+      "nome": "tst",
+      "email": "tst@gmail.com",
+      "senha": "123"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Tênis Esportivo",
+      "descricao": "Tênis com design moderno, perfeito para atividades físicas.",
+      "categoria": "Beleza",
+      "preco": "199.90",
+      "imagemUrl": "https://static.netshoes.com.br/produtos/tenis-esportivo-feminino-amortecedor-gel-academia-caminhada/54/6TR-0008-D54/6TR-0008-D54_zoom1.jpg?ts=1700144131",
+      "id": "2"
+    },
+    {
+      "id": "4",
+      "nome": "Mochila Executiva Masculina",
+      "descricao": "Mochila espaçosa com compartimentos para laptop e documentos.",
+      "preco": "159.90",
+      "categoria": "Bolsas e Mochilas",
+      "imagemUrl": "https://tripland.com.br/cdn/shop/files/S918f20e6a4a84e47832a7bfa67102aebJ_aef60720-3a32-41ed-9f37-8f8cfa56122c_288x.webp?v=1719506264"
+    },
+    {
+      "id": "5",
+      "nome": "Fone de Ouvido Bluetooth",
+      "descricao": "Fone de ouvido sem fio com cancelamento de ruído e bateria de longa duração.",
+      "preco": "249.90",
+      "categoria": "Eletrônicos",
+      "imagemUrl": "https://img.kalunga.com.br/fotosdeprodutos/282125z.jpg"
+    },
+    {
+      "nome": "Camisa polo",
+      "descricao": "Uma camisa social e confortável, para ser usada em eventos",
+      "categoria": "Beleza",
+      "preco": "119.9",
+      "imagemUrl": "https://rivierawear.com.br/cdn/shop/files/S524a556a74dd4fb68af998e54ae74ce0a.jpg?v=1687793451",
+      "id": "9f27"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Saúde"
+    },
+    {
+      "id": "2",
+      "nome": "Beleza"
+    }
+  ]
 }

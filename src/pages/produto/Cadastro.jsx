@@ -1,6 +1,9 @@
 import { AuthContext } from "../../contexts/UserContext"
 import { Navigate } from "react-router"
 import { useContext } from "react"
+import { Container } from "react-bootstrap"
+
+import Formulario from "../../components/Formulario"
 
 const Cadastro = () => {
 
@@ -10,7 +13,12 @@ const Cadastro = () => {
 
   return (
     <div>
-        
+      <div style={{ height: "91.8vh" }}>
+        <Container>
+          <h1>Cadastrar Produto</h1>
+          <Formulario page="cadastrar" />
+        </Container>
+      </div>
     </div>
   )
 }
