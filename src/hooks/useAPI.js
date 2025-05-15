@@ -75,6 +75,7 @@ export function useDeleteProduto() {
         console.log("Produto deletado:", res)
         return res
     }
+<<<<<<< HEAD
     return { deletarProduto }
 }
 
@@ -92,15 +93,41 @@ export function useBuscarProdutoPorid(){
 export function useListaCategorias(){
 
     const [categorias, setCategorias] = useState([])
+=======
+    return {deletarProduto}
+}
+
+export function useBuscarProdutoPorId () {
+    const buscarProdutoPorId = async (idProd) => {
+        const req = await fetch(`${url}produtos/${idProd}`);
+        const res = await req.json();
+        console.log("Produto encontrado:", res);
+        return res;
+    }
+    return { buscarProdutoPorId }
+}
+
+export function useListaCategorias() {
+    const [ categorias, setCategorias ] = useState([])
+>>>>>>> bd705921f1b5ee0ff1bec6a6901a4828981a5d99
 
     useEffect(() => {
         async function fetchData() {
             try{
                 const req = await fetch(`${url}categorias`)
+<<<<<<< HEAD
                 setCategorias(await req.json())
             }
             catch(erros){
                 console.log(erros.message)
+=======
+                const categoria = await req.json()
+                console.log(categoria)
+                setCategorias(categoria)
+            }
+            catch(erro){
+                console.log(erro.message)
+>>>>>>> bd705921f1b5ee0ff1bec6a6901a4828981a5d99
             }
         }
         fetchData()
@@ -110,6 +137,7 @@ export function useListaCategorias(){
 
 export function useInserirProduto(){
     const inserirProduto = async (data) => {
+<<<<<<< HEAD
         const req = await fetch (`${url}produtos`, {
             method: "POST",
             headers: {
@@ -118,11 +146,24 @@ export function useInserirProduto(){
             body: JSON.stringify(data)
         })
         return (await req.json())
+=======
+        const req = await fetch(`${url}produtos`, {
+            method: "POST",
+            headers: {
+                "Content-Type":  "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+        const res = await req.json()
+        console.log("Produto inserido:",res)
+        return res
+>>>>>>> bd705921f1b5ee0ff1bec6a6901a4828981a5d99
     }
     return { inserirProduto }
 }
 
 export function useAtualizaProduto(){
+<<<<<<< HEAD
     const atualizaProduto = async (data, idProduto) => {
         const req = await fetch (`${url}produtos/${idProduto}`, {
             method: "PUT",
@@ -132,6 +173,19 @@ export function useAtualizaProduto(){
             body: JSON.stringify(data)
         })
         return (await req.json())
+=======
+    const atualizaProduto = async (data, idProd) => {
+        const req = await fetch(`${url}produtos/${idProd}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+        const res = await req.json()
+        console.log("Produto atualizado:",res)
+        return res
+>>>>>>> bd705921f1b5ee0ff1bec6a6901a4828981a5d99
     }
     return { atualizaProduto }
 }
